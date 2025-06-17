@@ -95,7 +95,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden glass rounded-xl mt-4 overflow-hidden"
+            className="md:hidden bg-black/80 backdrop-blur-lg border border-white/10 rounded-xl mt-4 overflow-hidden"
           >
             <div className="p-4 space-y-2">
               {navItems.map((item) => (
