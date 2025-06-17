@@ -221,7 +221,7 @@ export default function Home() {
               <Button 
                 variant="primary" 
                 size="lg"
-                className="glass hover-lift group"
+                className="hover-lift group"
                 asChild
               >
                 <Link href="/inscription" className="flex items-center justify-center gap-2">
@@ -376,7 +376,7 @@ export default function Home() {
                   <Button 
                     variant="primary" 
                     size="lg"
-                    className="glass hover-lift group"
+                    className="hover-lift group"
                     asChild
                   >
                     <Link href="/inscription" className="flex items-center justify-center gap-2">
@@ -485,7 +485,7 @@ export default function Home() {
             <Button 
               variant="primary" 
               size="lg"
-              className="glass hover-lift group"
+              className="hover-lift group"
               asChild
             >
               <Link href="/inscription" className="flex items-center justify-center gap-2">
