@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "formatVersion": 3,
+    "type": "font",
+    "generated": "2024-03-15T12:00:00.000Z",
+    "version": "1.0.0"
+  },
+  "familyName": "Helvetiker",
+  "styleName": "Regular",
+  "faces": [
+    {
+      "familyName": "Helvetiker",
+      "styleName": "Regular",
+      "ascent": 1900,
+      "descent": -500,
+      "lineGap": 0,
+      "unitsPerEm": 1000,
+      "xHeight": 521,
+      "capHeight": 718,
+      "bbox": {
+        "xMin": -1000,
+        "xMax": 1000,
+        "yMin": -500,
+        "yMax": 1900
+      }
+    }
+  ]
+} 
