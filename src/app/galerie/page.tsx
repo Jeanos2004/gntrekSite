@@ -4,8 +4,20 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Camera, MapPin, Calendar, Users, Heart, Share2, Download, X } from 'lucide-react';
 
+interface GalleryImage {
+  id: number;
+  src: string;
+  alt: string;
+  category: string;
+  location: string;
+  date: string;
+  likes: number;
+  photographer: string;
+  description: string;
+}
+
 export default function GaleriePage() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [activeFilter, setActiveFilter] = useState('all');
 
   const filters = [
@@ -16,7 +28,7 @@ export default function GaleriePage() {
     { id: 'sunset', label: 'Couchers de soleil', count: 6 }
   ];
 
-  const images = [
+  const images: GalleryImage[] = [
     {
       id: 1,
       src: '/images/gallery-1.jpg',

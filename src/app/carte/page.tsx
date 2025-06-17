@@ -4,15 +4,31 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Navigation, Filter, Search, Star, Clock, Users, Mountain, Calendar } from 'lucide-react';
 
+interface Trail {
+  id: number;
+  name: string;
+  difficulty: string;
+  duration: string;
+  distance: string;
+  elevation: string;
+  rating: number;
+  participants: number;
+  location: string;
+  coordinates: { lat: number; lng: number };
+  description: string;
+  image: string;
+  nextDate: string;
+}
+
 export default function CartePage() {
-  const [selectedTrail, setSelectedTrail] = useState(null);
+  const [selectedTrail, setSelectedTrail] = useState<Trail | null>(null);
   const [filters, setFilters] = useState({
     difficulty: 'all',
     duration: 'all',
     distance: 'all'
   });
 
-  const trails = [
+  const trails: Trail[] = [
     {
       id: 1,
       name: 'Sentier des Crêtes',
